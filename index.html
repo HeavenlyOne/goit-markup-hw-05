@@ -16,7 +16,7 @@
                 <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
                 <ul class="site-nav list">
                     <li class="item">
-                        <a href="" class="site-nav list-link" >Студія</a>
+                        <a href="" class="site-nav list-link current-page">Студія</a>
                     </li>
                     <li class="item">
                         <a href="./portfolio.html" class="site-nav list-link">Портфоліо</a>
@@ -50,7 +50,7 @@
         <div class="hero-space">
             <section class="conteiner">
                 <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </section>
         </div>
         <div>
@@ -98,20 +98,23 @@
             <section class="conteiner">
                 <h2 class="h-two">Чим ми займаємося</h2>
                 <ul class="disp-agile work-pad">
-                    <li class="list">
+                    <li class="list doing-item">
                         <a href="">
                             <img src="./images/Програмування.jpg" alt="Програмувальник працює з кодом за блок-схемою" width="370">
-                        </a>
+                            <p class="doing">Десктопні додатки</p>
+                        </a>               
                     </li>
-                    <li class="list">
+                    <li class="list doing-item">
                         <a href="">
                             <img src="./images/Адаптивна_верстка.jpg" alt="Розробниця у світшоті працює зі смартфоном" width="370">
-                        </a>
+                            <p class="doing">Мобільні додатки</p>
+                        </a>                        
                     </li>
-                    <li class="list">
+                    <li class="list doing-item">
                         <a href="">
                             <img src="./images/Планшет_з_кольоровою_палітрою.jpg" alt="Розробник працює з колоровою палітрою на планшеті" width="370">
-                        </a>
+                            <p class="doing">Дизайнерські рішення</p>
+                        </a>                       
                     </li>
                 </ul>
             </section>
@@ -358,5 +361,17 @@
            </div>
         </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-window">
+            <button class="close-crist" data-modal-close>
+                <svg width="30" height="30">
+                    <use href="./images/crest.svg#close-1"></use>
+                </svg>
+            </button>           
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
-</
+</html>
+
+  
